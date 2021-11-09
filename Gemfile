@@ -37,6 +37,8 @@ group :development, :test do
   gem 'pry-rails'
   gem 'dotenv-rails'
   gem 'rspec-rails', ">= 3.9.0"
+  gem 'guard'
+  gem 'guard-rspec', require: false
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
