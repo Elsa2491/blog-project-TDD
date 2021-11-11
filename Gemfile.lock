@@ -110,6 +110,9 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
+    guard-test (2.0.8)
+      guard-compat (~> 1.2)
+      test-unit (~> 3.0)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
@@ -139,6 +142,7 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     pg (1.2.3)
+    power_assert (2.0.1)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -239,6 +243,8 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    test-unit (3.5.1)
+      power_assert
     thor (1.1.0)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -280,6 +286,7 @@ DEPENDENCIES
   font-awesome-sass
   guard
   guard-rspec
+  guard-test
   jbuilder (~> 2.7)
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
