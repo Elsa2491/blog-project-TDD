@@ -6,6 +6,6 @@ FactoryBot.define do
       content {''}
     end
 
-    post
+    # post
   end
 end

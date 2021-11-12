@@ -4,11 +4,11 @@ require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
   context 'validation' do
-    it "has a valid comment" do
-      comment = build(:comment, post: create(:post))
-      comment.validate
-      expect(create(:comment)).to be_valid
-    end
+    # it "has a valid comment" do
+    #   comment = build(:comment, post: create(:post))
+    #   comment.validate
+    #   expect(create(:comment)).to be_valid
+    # end
 
     it "should validate content length" do
       comment = build(:comment_empty)
