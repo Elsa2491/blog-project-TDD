@@ -5,5 +5,7 @@ FactoryBot.define do
     factory :comment_empty do
       content {''}
     end
+
+    post
   end
 end

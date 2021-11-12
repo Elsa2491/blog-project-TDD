@@ -16,7 +16,9 @@ RSpec.describe Post, type: :model do
   # Description
   it "should persist a post" do
     # Act
-    create(:post)
+    user = build(:user)
+    user.posts << build(:post)
+    user.save
     # Assert
     expect(Post.count).to eq(1)
   end
