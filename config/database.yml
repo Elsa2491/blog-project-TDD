@@ -78,8 +78,19 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+# production:
+#   <<: *default
+#   database: _blog_project_TDD_production
+#   username: _blog_project_TDD
+#   password: <%= ENV['_BLOG_PROJECT_TDD_DATABASE_PASSWORD'] %>
+
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#databse-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   database: _blog_project_TDD_production
-  username: _blog_project_TDD
   password: <%= ENV['_BLOG_PROJECT_TDD_DATABASE_PASSWORD'] %>
+
+
