@@ -1,10 +1,10 @@
+# spec/requests/user_logins_spec.rb
 require 'rails_helper'
 
 
 RSpec.describe "UserLogins", type: :request do
-
   describe "GET /login" do
-    it "works! (now write some real specs)" do
+    it "works!" do
       get login_path
       expect(response).to have_http_status(200)
     end
