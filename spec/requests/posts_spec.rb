@@ -37,7 +37,7 @@ RSpec.describe "Posts", type: :request do
       post = Post.new(valid_attributes)
       post.user = current_user
       post.save
-      get root_url
+      get root_path
       expect(response).to be_successful
     end
 
@@ -45,7 +45,7 @@ RSpec.describe "Posts", type: :request do
       post = Post.create(valid_attributes)
       post.user = current_user
       post.save
-      get post_url(post)
+      get post_path(post)
       expect(response).to be_successful
     end
   #end
